@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-ijkl
+  namespace: anjoseph-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:4ee6cdc8271f47f964554ce79f8802cf06c5d08cfe6f3d9671c6c55210cc7a7d
+        name: my-java-quarkus
+        resources: {}
+status: {}
